@@ -29,7 +29,7 @@ class Solution {
             int i = 0;
             while(i + wordsWindow <= sLen) {
                 if(checkSubstring(wordCount, s.substr(i, wordsWindow), wordLen)) {
-                    res.push_back(is);
+                    res.push_back(i);
                 }
                 i++;
             }
